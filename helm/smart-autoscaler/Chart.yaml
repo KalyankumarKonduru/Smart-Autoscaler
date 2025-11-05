@@ -1,0 +1,6 @@
+apiVersion: v2
+name: smart-autoscaler
+description: Kubernetes-native multi-metric autoscaler with dashboard endpoints
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

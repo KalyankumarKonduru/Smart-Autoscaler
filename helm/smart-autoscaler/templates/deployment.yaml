@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smart-autoscaler
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: smart-autoscaler }
+  template:
+    metadata:
+      labels: { app: smart-autoscaler }
+    spec:
+      serviceAccountName: smart-autoscaler
+      containers:
+        - name: autoscaler
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: TARGET_NAMESPACE
+              value: {{ .Values.target.namespace | quote }}
+            - name: TARGET_DEPLOYMENT
+              value: {{ .Values.target.deployment | quote }}
+            - name: CPU_THRESHOLD
+              value: {{ .Values.thresholds.cpu | quote }}
+            - name: MEM_THRESHOLD
+              value: {{ .Values.thresholds.mem | quote }}
+            - name: P95_THRESHOLD
+              value: {{ .Values.thresholds.p95 | quote }}
+            - name: MIN_REPLICAS
+              value: {{ .Values.bounds.min | quote }}
+            - name: MAX_REPLICAS
+              value: {{ .Values.bounds.max | quote }}
+            - name: COOLDOWN
+              value: {{ .Values.cooldown | quote }}
+          ports:
+            - containerPort: {{ .Values.service.port }}
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ .Values.service.port }}
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ .Values.service.port }}
+            initialDelaySeconds: 10
+            periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smart-autoscaler
+spec:
+  selector: { app: smart-autoscaler }
+  ports:
+    - port: 80
+      targetPort: {{ .Values.service.port }}
+      name: http

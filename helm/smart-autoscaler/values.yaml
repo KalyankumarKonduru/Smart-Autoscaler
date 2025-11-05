@@ -1,0 +1,21 @@
+image:
+  repository: ghcr.io/example/smart-autoscaler
+  tag: latest
+  pullPolicy: IfNotPresent
+
+target:
+  namespace: smart-autoscaler
+  deployment: sample-app
+
+thresholds:
+  cpu: 500    # millicores
+  mem: 512    # MiB
+  p95: 400    # ms
+
+bounds:
+  min: 1
+  max: 10
+cooldown: 60s
+
+service:
+  port: 8080
