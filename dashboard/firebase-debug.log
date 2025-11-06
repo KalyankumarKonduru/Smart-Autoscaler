@@ -1,0 +1,88 @@
+[debug] [2025-11-06T00:33:18.561Z] ----------------------------------------------------------------------
+[debug] [2025-11-06T00:33:18.573Z] Command:       /opt/homebrew/Cellar/node/24.3.0/bin/node /opt/homebrew/bin/firebase init hosting
+[debug] [2025-11-06T00:33:18.573Z] CLI Version:   14.24.0
+[debug] [2025-11-06T00:33:18.573Z] Platform:      darwin
+[debug] [2025-11-06T00:33:18.574Z] Node Version:  v24.3.0
+[debug] [2025-11-06T00:33:18.574Z] Time:          Wed Nov 05 2025 18:33:18 GMT-0600 (Central Standard Time)
+[debug] [2025-11-06T00:33:18.574Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/kalyankumarkonduru/Downloads/smart-autoscaler/dashboard
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-11-06T00:33:22.984Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-06T00:33:22.985Z] > authorizing via signed-in user (kondurukalyankumar.dev@gmail.com)
+[debug] [2025-11-06T00:33:22.987Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:22.987Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:22.989Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2025-11-06T00:33:23.410Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2025-11-06T00:33:23.410Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2025-11-06T00:33:26.332Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:26.333Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:26.333Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase [none]
+[debug] [2025-11-06T00:33:26.504Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase 403
+[debug] [2025-11-06T00:33:26.504Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-11-06T00:33:26.506Z] Request to https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-11-06T00:33:26.508Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:322:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2025-11-06T00:33:39.496Z] ----------------------------------------------------------------------
+[debug] [2025-11-06T00:33:39.501Z] Command:       /opt/homebrew/Cellar/node/24.3.0/bin/node /opt/homebrew/bin/firebase init hosting
+[debug] [2025-11-06T00:33:39.501Z] CLI Version:   14.24.0
+[debug] [2025-11-06T00:33:39.501Z] Platform:      darwin
+[debug] [2025-11-06T00:33:39.501Z] Node Version:  v24.3.0
+[debug] [2025-11-06T00:33:39.501Z] Time:          Wed Nov 05 2025 18:33:39 GMT-0600 (Central Standard Time)
+[debug] [2025-11-06T00:33:39.502Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/kalyankumarkonduru/Downloads/smart-autoscaler/dashboard
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-11-06T00:33:41.256Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-06T00:33:41.256Z] > authorizing via signed-in user (kondurukalyankumar.dev@gmail.com)
+[debug] [2025-11-06T00:33:41.258Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:41.258Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:41.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2025-11-06T00:33:41.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2025-11-06T00:33:41.680Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2025-11-06T00:33:46.688Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:46.689Z] Checked if tokens are valid: true, expires at: 1762392743548
+[debug] [2025-11-06T00:33:46.689Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase [none]
+[debug] [2025-11-06T00:33:46.930Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase 403
+[debug] [2025-11-06T00:33:46.931Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-11-06T00:33:46.932Z] Request to https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-11-06T00:33:46.934Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/acoustic-portal-477322-v6:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:322:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

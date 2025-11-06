@@ -148,9 +148,9 @@ func main() {
 	// HTTP API: /events, /predict (what-if), /healthz
 	r := gin.Default()
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173"},
-		AllowMethods:     []string{"GET","POST","OPTIONS"},
-		AllowHeaders:     []string{"*"},
+		AllowOrigins: []string{"*"}, // or restrict to your frontend domain later
+  		AllowMethods: []string{"GET","POST","OPTIONS"},
+  		AllowHeaders: []string{"Origin","Content-Type"},
 		AllowCredentials: false,
 		MaxAge:           12 * time.Hour,
 	}))

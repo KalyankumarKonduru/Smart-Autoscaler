@@ -1,0 +1,8 @@
+{
+    "name": "api-proxy",
+    "private": true,
+    "type": "module",
+    "dependencies": { "undici": "^6.19.8" },
+    "scripts": { "start": "node server.js" }
+  }
+  
